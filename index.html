@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <!-- font awesome icon link -->
+  <script src="https://kit.fontawesome.com/fe52f53915.js" crossorigin="anonymous"></script>
+  <!-- bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- external css link -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <!-- header starts -->
+  <header>
+    <h1 class="text-center fw-bolder my-3">Shopping Cart</h1>
+  </header>
+  <main>
+    <!-- phone price and quantity section starts -->
+    <section class="p-3 product-section mx-5 rounded mb-3 h-50">
+      <div class="row my-style gx-1">
+        <div class="col-sm-12 col-md-4">
+          <img src="images/product-1.png" class="h-100 w-50" alt="phoneproduct">
+        </div>
+        <div class="col-md-4">
+          <div class="product-number">
+            <button class="btn" id="phone-btn-decrease">
+              <i class="fas fa-minus-square"></i>
+            </button>
+            <input id="phone-difference-number" type="text" class="ps-2 rounded" value="1">
+            <button id="phone-btn-increase" class="btn">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="my-heading-style">$<span id="phone-price">1219</span></h3>
+        </div>
+      </div>
+    </section>
+    <!-- phone price and quantity section ends -->
+    <!-- case price and quantity section starts -->
+    <section class="p-3 product-section mx-5 rounded mb-3 h-50">
+      <div class="row my-style gx-1">
+        <div class="col-md-4">
+          <img src="images/product-2.png" class="h-100 w-50 my-style" alt="phoneproduct">
+        </div>
+        <div class="col-md-4">
+          <div class="product-number">
+            <button id="case-btn-decrease" class="btn">
+              <i class="fas fa-minus-square"></i>
+            </button>
+            <input id="phonecase-difference-number" type="text" class=" rounded" value="1">
+            <button id="case-btn-increase" class="btn">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="my-heading-style">$ <span id="phonecase-price">59</span></h3>
+        </div>
+      </div>
+    </section>
+    <!-- case price and quantity section ends -->
+    <section class="mb-3 rounded h-75">
+      <div class="row mx-5">
+        <div id="sub-area" class="col-md-4 border rounded text-center fs-5 py-3">
+          <h3>SubTotal</h3>
+          <h3>$<span id="sub">00</span></h3>
+        </div>
+        <div id="tax-area" class="col-md-4 border rounded text-center fs-5 py-3">
+          <h3 class="fs-3">Tax</h3>
+          <h3 class="fs-3">$<span id="tax">00</span></h3>
+        </div>
+        <div id="total-area" class="col-md-4 border rounded text-center fs-5 py-3">
+          <h3 class="fs-3">Total</h3>
+          <h3 class="fs-3">$<span id="grand">00</span></h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

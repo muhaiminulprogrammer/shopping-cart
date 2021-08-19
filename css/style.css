@@ -1,0 +1,20 @@
+input{
+  width: 40px;
+}
+.fas{
+  color: darkorange;
+  font-size: 26px;
+}
+.product-section{
+  background-color: rgba(206, 219, 203, 0.801);
+}
+.product-number,.my-heading-style{
+  margin-top: 20%;
+  margin-left: 20%;
+}
+.total-heading{
+  margin-top: 29%;
+}
+h1,h3{
+  color: purple;
+}
